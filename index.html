@@ -36,6 +36,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    
+
 
 
 
@@ -66,7 +68,8 @@
                         <li class="page-scroll"><a href="#service">Service</a></li>
                         <li class="page-scroll"><a href="#portfolio">Project</a></li>
                         <li class="page-scroll"><a href="#contact">Contact</a></li>
-                        <li class="page-scroll"><a href="https://bdragon00.github.io/Portfolio-Game-1/Archer/index.html">Game</a></li>
+                        <li class="page-scroll"><a href="#Game">Game</a></li>
+                        
                         
                     </ul><!-- /.navbar-nav -->
 
@@ -81,7 +84,7 @@
             <div class="row">
 
                 <div class="col-md-6">
-                    <h1>Le Nguyen Hoang Long</h1>
+                    <h1><strong><span>L</span></strong>e Nguyen Hoang Long</h1>
                     <div class="page-scroll">
                         <p class="job-title">Web Designer and Developer</p>
                         <a href="#contact" class="btn btn-fill ">Hire me</a>
@@ -104,7 +107,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
-                        <h2><strong><span>A</span></strong>bout</h2>
+                        <h2>About</h2>
                         <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                         <p>Hello! I'm Long, a Designer and developer, a guy slighty obsessed for code quality. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.<br>
                             <br>Birth: 07/12/2004<br>
@@ -182,6 +185,8 @@
             </div>
         </section><!-- /.secton-services -->
 
+                    
+                               
         <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
                 <div class="text-center">
@@ -251,8 +256,8 @@
                 </div>
             </div>
         </section><!-- /.secton-portfolio -->
-        
 
+        
         <section class="site-section section-counters text-center">
             <div class="container">
                 <div class="row">
@@ -271,17 +276,10 @@
                 </div>
             </div>
         </section><!-- /.section-counters -->
-
-        <Section class="game">
-            <div>
-                
-            </div>
-        </Section>
-
+            
         <section id="contact" class="site-section section-form text-center">
             <div class="container">
-
-                <h3>Contact</h3>
+                <h3><strong><span>C</span></strong>ontact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                 <form>
                     <div class="row">
@@ -299,7 +297,51 @@
                 </form>
             </div>
         </section><!-- /.section-form -->
-    </main><!-- /#main -->  
+
+        <div id="Game">
+            <div class="container">
+                <div class="text-center">
+                    <div id="tic-tac-toe">
+                            <h1><strong><span>G</span></strong>ame</h1>
+                    <div>
+                        <ul id="game">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <button id="reset">Reset</button>
+                        <link href="assets/css/game.css" rel="stylesheet">
+                    </div>
+                    
+
+                    <script>
+                        const gameBoard = document.querySelectorAll('#game li');
+                        const resetButton = document.getElementById('reset');
+                        let currentPlayer = 'X';
+                    
+                        function handleClick(event) {
+                            if (event.target.textContent === '') {
+                                event.target.textContent = currentPlayer;
+                                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                            }
+                        }
+                    
+                        function resetGame() {
+                            gameBoard.forEach(cell => cell.textContent = '');
+                            currentPlayer = 'X';
+                        }
+                    
+                        gameBoard.forEach(cell => cell.addEventListener('click', handleClick));
+                        resetButton.addEventListener('click', resetGame);
+                    </script>
+
+    </main><!-- /#main --> 
 
     <footer id="colophon" class="site-footer">
         <div class="container">
@@ -436,6 +478,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/script.js"></script>
-  
+    
 </body>
 </html>

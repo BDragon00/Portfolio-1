@@ -1,0 +1,93 @@
+#tic-tac-toe {
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+.tic-tac-toe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+}
+
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tic-tac-toe h1 {
+    margin-bottom: 20px;
+}
+
+.tic-tac-toe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.tic-tac-toe-grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1e1;
+    border: 1px solid #212121;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.tic-tac-toe button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#game li {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: #ccc;
+    line-height: 60px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #555;
+}
+/*******tic-tac-toe END******/

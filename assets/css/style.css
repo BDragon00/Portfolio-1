@@ -130,6 +130,9 @@ textarea {
     font-size: 16px;
 }
 
+
+
+
 /* LAYOUT
 ================================================== */
 html, body {
@@ -300,6 +303,7 @@ html, body {
     margin: 0 0 15px;
 }
 
+
 .progress {
     height: 15px;
     margin-bottom: 0;
@@ -358,9 +362,10 @@ html, body {
     margin-bottom: 0;
 }
 
-/* Section: Portfolio */
+/* Section: Project */
 .section-portfolio {
-    padding-bottom: 120px;
+    padding-top: 100px;
+    
 }
 
 .portfolio-item {
@@ -370,7 +375,7 @@ html, body {
 }
 
 .section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .portfolio-item:before {
@@ -528,8 +533,6 @@ html, body {
 
 
 
-
-
 /* FOOTER
 ================================================== */
 .site-footer {
@@ -581,3 +584,16 @@ a.icon-up-bg:hover {color: #212121;}
     color: #fff;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

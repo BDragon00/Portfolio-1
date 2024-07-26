@@ -76,12 +76,14 @@
 
 	.section-skills,
 	.section-portfolio,
+	.section-Game,
 	.section-form {
 	    padding-bottom: 90px;
 	}
 
 	.site-section h2,
-	.site-section h3 {
+	.site-section h3,
+	.site-section h5 {
 		font-size: 32px
 	}
 
@@ -92,6 +94,16 @@
 	}
 
 	.skill h4 {
+		font-size: 22px;
+	}
+
+	/* Section: Game */
+	.section-Game .col-md-4 + .col-md-4,
+	.game + .Game {
+		margin-top: 20px;
+	}
+
+	.Game h5 {
 		font-size: 22px;
 	}
 
@@ -324,12 +336,14 @@
 
 	.section-skills,
 	.section-portfolio,
+	.section-Game,
 	.section-form {
 	    padding-bottom: 60px;
 	}
 
 	.site-section h2,
-	.site-section h3 {
+	.site-section h3,
+	.site-section h5 {
 	    font-size: 28px;
 	}
 
@@ -343,6 +357,12 @@
 
 	/* Section: Skills */
 	.skill h4 {
+	    text-transform: uppercase;
+	    margin-bottom: 10px;
+	}
+
+	/* Section: Game */
+	.Game h5 {
 	    text-transform: uppercase;
 	    margin-bottom: 10px;
 	}
